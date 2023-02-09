@@ -1,0 +1,192 @@
+@import url(https://fonts.google.com/specimen/Bai+Jamjuree);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-primary-100: hsl(171, 66%, 44%);
+    --clr-primary-200: hsl(233, 100%, 69%);
+    --clr-neutral-100: hsl(210, 10%, 33%);
+    --clr-neutral-200: hsl(201, 11%, 66%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    ;
+    text-align: center;
+    font-size: 18px;
+    font-family: Bai Jamjuree;
+    font-weight: 400;
+}
+
+h1,
+h2 {
+    padding-bottom: 1rem;
+}
+
+h3 {
+    padding-bottom: 0.5rem;
+}
+
+.text {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+p {
+    color: var(--clr-neutral-200)
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    color: white;
+    border: none;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.ios_btn {
+    background-color: var(--clr-primary-100);
+}
+
+.mac_btn {
+    background-color: var(--clr-primary-200);
+}
+
+header {
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 3rem;
+    max-width: 100%;
+}
+
+section {
+    padding: 3rem;
+}
+
+.col_one img {
+    width: 95%;
+    padding-top: 2rem;
+}
+
+.col_child {
+    padding-top: 2rem;
+}
+
+.sect_two_img img {
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.logo_child {
+    padding-top: 2rem;
+}
+
+footer {
+    background-color: var(--clr-neutral-200);
+    padding: 4rem;
+}
+
+.footer_logo img {
+    width: 25%;
+}
+
+nav {
+    margin-top: 3rem;
+}
+
+li {
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+.social_media {
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+
+.social_media img {
+    margin-right: 1rem;
+}
+
+@media only screen and (min-width: 700px) {
+    .button {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    button {
+        padding: 1rem 4rem;
+        margin-right: 1rem;
+    }
+
+    .text p {
+        max-width: 100%;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .row_one {
+        display: flex;
+        align-items: center;
+        margin-left: -5rem;
+    }
+
+    .col_one img {
+        width: 100%;
+    }
+
+    .col_two {
+        /* padding-top: 6rem; */
+        text-align: left;
+        max-width: 80%;
+        margin-left: 8rem;
+    }
+
+    .icons {
+        display: flex;
+    }
+
+    .sect_logos {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer {
+        height: 100px;
+        padding: 0rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    nav {
+        margin-top: 0;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    li {
+        margin-top: 0;
+    }
+
+}
